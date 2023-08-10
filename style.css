@@ -1,0 +1,217 @@
+/* Media query for tablets and small screens */
+@media only screen and (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #nav-bar {
+        margin-top: 20px;
+    }
+  
+    #form {
+        flex-direction: column;
+    }
+  
+    #email, #submit {
+        width: 100%;
+    }
+  
+    .grid {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Media query for mobile phones */
+  @media only screen and (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+  
+    .grid {
+        gap: 10px;
+    }
+  
+    #pricing {
+        flex-direction: column;
+    }
+  
+    .product {
+        margin-bottom: 20px;
+    }
+  }
+     /* Reset default margin and padding for better layout */
+     body, h2, form, ul, li {
+      margin: 0;
+      padding: 0;
+  }
+  
+  /* Style the header */
+  #header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+  }
+  
+  /* Style the logo */
+  .logo img {
+      height: 50px;
+      width: auto;
+  }
+  
+  /* Style the navigation bar */
+  #nav-bar ul {
+      list-style: none;
+      display: flex;
+  }
+  
+  #nav-bar li {
+      margin-right: 20px;
+  }
+  
+  /* Style the navigation links */
+  .nav-link {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+  }
+  
+  .nav-link:hover {
+      background-color: #555;
+  }
+  
+  /* Style the hero section */
+  #hero {
+      background-color: #f9f9f9;
+      padding: 40px;
+      text-align: center;
+  }
+  
+  h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+  }
+  
+  /* Style the form */
+  #form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  /* Style the email input */
+  #email {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 250px;
+      margin-right: 10px;
+  }
+  
+  /* Style the submit button */
+  #submit {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  #submit:hover {
+      background-color: #0056b3;
+  }
+  
+  /* Style the container */
+  .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  /* Style the feature grid */
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      text-align: center;
+      margin-bottom: 40px;
+  }
+  
+  .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+  }
+  
+  .desc h2 {
+      margin-bottom: 10px;
+  }
+  
+  /* Style the pricing section */
+  #pricing {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 40px 0;
+  }
+  
+  .product {
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .product h2 {
+      margin-bottom: 20px;
+  }
+  
+  .product ol {
+      text-align: left;
+      margin-bottom: 20px;
+  }
+  
+  .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  /* Style the footer */
+  footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  footer ul {
+      list-style: none;
+      margin-bottom: 10px;
+  }
+  
+  footer li {
+      display: inline-block;
+      margin-right: 10px;
+  }
+  
+  footer a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  footer a:hover {
+      text-decoration: underline;
+  }
+  
+  /* Center the YouTube video */
+  #how_it_works {
+      display: flex;
+      justify-content: center;
+  }
